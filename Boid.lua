@@ -100,10 +100,6 @@ function Boid:wander()
 	local wanderD = 60.0
 	local change  = 0.5
 	
-	if self.boidType == 'zombie' then
-		change = 0.01		
-	end
-	
 	local negChange = math.random(2)
 	local randomNum = math.random() * change
 	if negChange == 2 then
